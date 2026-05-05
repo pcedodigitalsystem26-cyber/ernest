@@ -1,0 +1,84 @@
+/* 1. Base Styles & Fonts */
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f4f7f6; 
+    color: #1a1a1a; 
+    overflow-x: hidden; /* Iwas sa horizontal scroll */
+}
+
+.heading-bold { 
+    font-family: 'Syncopate', sans-serif; 
+    text-transform: uppercase; 
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+/* 2. Custom Typography Effects */
+.outline-text {
+    -webkit-text-stroke: 1.5px #1e40af;
+    color: transparent;
+}
+
+/* 3. Card & Box Shadows */
+.card-shadow { 
+    box-shadow: 10px 10px 0px #1e40af; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-shadow:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 14px 14px 0px #1e40af;
+}
+
+/* 4. Landing Page Image Effects (IMG.jpg) */
+header .group img {
+    filter: grayscale(100%) contrast(1.1);
+    transition: all 0.7s ease-in-out;
+}
+
+header .group:hover img {
+    filter: grayscale(0%) contrast(1);
+    transform: scale(1); /* Babalik sa normal size mula sa initial scale-110 */
+}
+
+/* 5. Shared Animations */
+.group:hover .transition-transform {
+    transform: translateX(0.5rem);
+}
+
+/* 6. Responsive Fixes (Para sa Mobile) */
+@media (max-width: 768px) {
+    header {
+        padding-top: 100px; /* Space para sa fixed nav */
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem; /* Medyo liliit ang font sa phone */
+        line-height: 1;
+    }
+
+    header .outline-text {
+        -webkit-text-stroke: 1px #1e40af; /* Mas manipis na stroke sa maliit na screen */
+    }
+
+    /* Pantayin ang paragraph sa gitna kapag mobile */
+    header p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Tanggalin ang transition transform sa mobile para hindi magalaw masyado */
+    .group:hover .transition-transform {
+        transform: none;
+    }
+}
+
+/* 7. Arsenal Skill Badges Hover */
+.border-gray-300:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0px #1e40af;
+}

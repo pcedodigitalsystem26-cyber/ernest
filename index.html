@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Ernest | IT Portfolio</title>
+    <!-- Tailwind and Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-[#f4f7f6]/80 backdrop-blur-md px-8 py-6 flex justify-between items-center border-b border-gray-200">
+        <a href="#" class="heading-bold text-xl tracking-tighter text-blue-700">J.ERNEST</a>
+        <div class="hidden md:flex space-x-10 text-[10px] font-black uppercase tracking-[0.3em] text-gray-600">
+            <a href="#about" class="hover:text-blue-700 transition">Info</a>
+            <a href="#dream" class="hover:text-blue-700 transition">Vision</a>
+            <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 1. LANDING PAGE -->
+    <header class="min-h-screen flex items-center px-8 max-w-7xl mx-auto pt-24 md:pt-0">
+        <div class="grid md:grid-cols-2 gap-12 items-center w-full">
+            <!-- Left Side: Text Content -->
+            <div class="order-2 md:order-1">
+                <span class="text-blue-700 font-extrabold text-sm tracking-[0.4em] mb-4 uppercase block">Incoming IT Professional</span>
+                <h1 class="heading-bold text-5xl md:text-[80px] lg:text-[90px] leading-[0.9] mb-8 tracking-tighter text-gray-900">
+                    JHON ERNEST <br> <span class="outline-text">DIMACALE</span>
+                </h1>
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <p class="text-gray-500 max-w-md text-lg leading-tight font-medium uppercase tracking-wider">
+                        BSIT 1B Student / Tech Visionary / Basketball Athlete. 
+                        Based in Palayan City.
+                    </p>
+                    <div class="h-[2px] w-20 bg-blue-700 mb-2 hidden md:block"></div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image Section -->
+            <div class="order-1 md:order-2 flex justify-center md:justify-end">
+                <div class="relative group">
+                    <!-- Blue Decorative Block -->
+                    <div class="absolute inset-0 bg-blue-700 translate-x-4 translate-y-4 -z-10 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
+                    <!-- Image Container -->
+                    <div class="overflow-hidden border-[6px] border-gray-900 bg-gray-200">
+                        <img src="IMG.jpg" alt="Jhon Ernest Dimacale" class="w-full max-w-[350px] md:max-w-[400px] aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. ABOUT ME -->
+    <section id="about" class="py-24 bg-white border-y border-gray-200 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+            <div class="space-y-6">
+                <h2 class="heading-bold text-2xl tracking-tighter text-gray-900 underline decoration-blue-700 decoration-4 underline-offset-8">Background</h2>
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    I am an 18-year-old student who finds purpose in technology. My journey in IT is driven by curiosity and the constant need to innovate.
+                </p>
+                <div class="p-6 border-l-4 border-blue-700 bg-gray-50 uppercase text-sm font-bold tracking-widest text-gray-600">
+                    "Basketball keeps my mind sharp and my body disciplined. I apply that same 'Mamba Mentality' to my coding and studies."
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 uppercase font-bold text-xs tracking-widest">
+                <div class="border border-gray-200 p-8 hover:border-blue-700 transition group">
+                    <span class="text-blue-700 block mb-2 group-hover:translate-x-2 transition-transform">Age</span>
+                    <span class="text-lg">18 Years Old</span>
+                </div>
+                <div class="border border-gray-200 p-8 hover:border-blue-700 transition group">
+                    <span class="text-blue-700 block mb-2 group-hover:translate-x-2 transition-transform">Born</span>
+                    <span class="text-lg">Aug 25, 2007</span>
+                </div>
+                <div class="border border-gray-200 p-8 hover:border-blue-700 transition group">
+                    <span class="text-blue-700 block mb-2 group-hover:translate-x-2 transition-transform">Location</span>
+                    <span class="text-lg leading-none">Brgy. Manacnac, Palayan</span>
+                </div>
+                <div class="border border-gray-200 p-8 hover:border-blue-700 transition group">
+                    <span class="text-blue-700 block mb-2 group-hover:translate-x-2 transition-transform">Status</span>
+                    <span class="text-lg">BSIT 1B</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. DREAM PROJECT -->
+    <section id="dream" class="py-32 px-8 max-w-7xl mx-auto">
+        <div class="bg-gray-900 p-12 md:p-20 card-shadow">
+            <h2 class="heading-bold text-blue-500 text-sm mb-6 tracking-[0.5em]">The Dream Project</h2>
+            <h3 class="heading-bold text-3xl md:text-5xl mb-8 leading-none text-white">Universal Management <br>System.</h3>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl font-light leading-relaxed mb-10">
+                I aim to build a platform that simplifies task and record management for small businesses and students. Simple, accessible, and user-friendly—especially for those new to tech.
+            </p>
+            <div class="flex items-center gap-4">
+                <span class="h-3 w-3 bg-blue-500 rounded-full animate-pulse"></span>
+                <span class="text-xs font-black text-white uppercase tracking-widest">Future Development</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SKILLS -->
+    <section class="py-24 bg-white px-8 border-t border-gray-200 text-center">
+        <h4 class="heading-bold text-gray-900 text-xl mb-12">Technical Arsenal</h4>
+        <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto uppercase text-xs font-black tracking-widest">
+            <span class="px-6 py-3 border border-gray-300 hover:bg-blue-700 hover:text-white transition cursor-default">System Logic</span>
+            <span class="px-6 py-3 border border-gray-300 hover:bg-blue-700 hover:text-white transition cursor-default">IT Fundamentals</span>
+            <span class="px-6 py-3 border border-gray-300 hover:bg-blue-700 hover:text-white transition cursor-default">Innovative Thinking</span>
+            <span class="px-6 py-3 border border-gray-300 hover:bg-blue-700 hover:text-white transition cursor-default">Problem Solving</span>
+        </div>
+    </section>
+
+    <!-- 9. CONTACT -->
+    <footer id="contact" class="py-24 px-8 text-center bg-gray-50">
+        <h2 class="heading-bold text-3xl md:text-5xl mb-4 tracking-tighter text-gray-900">Get in touch.</h2>
+        <p class="text-blue-700 font-bold mb-12 tracking-widest uppercase text-sm">Let's build the future together.</p>
+        
+        <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16 text-xs font-black uppercase tracking-[0.2em] mb-20 text-gray-600">
+            <a href="https://www.facebook.com/share/1CGk431yRz/" target="_blank" class="group transition-all">
+                <p class="text-blue-700 mb-1 group-hover:scale-110 transition-transform">FB</p>
+                <p class="text-gray-900 group-hover:text-blue-700">Ernest Dimacale</p>
+            </a>
+            <a href="mailto:dimacalejhonernest@gmail.com" class="group transition-all">
+                <p class="text-blue-700 mb-1 group-hover:scale-110 transition-transform">Email</p>
+                <p class="text-gray-900 group-hover:text-blue-700 uppercase text-[10px]">dimacalejhonernest@gmail.com</p>
+            </a>
+            <a href="tel:+639929969377" class="group transition-all">
+                <p class="text-blue-700 mb-1 group-hover:scale-110 transition-transform">Phone</p>
+                <p class="text-gray-900 group-hover:text-blue-700">0992 996 9377</p>
+            </a>
+        </div>
+        
+        <p class="text-[9px] text-gray-400 tracking-[0.6em] font-bold uppercase">
+            © 2026 Jhon Ernest R. Dimacale | BSIT 1B
+        </p>
+    </footer>
+
+</body>
+</html>
